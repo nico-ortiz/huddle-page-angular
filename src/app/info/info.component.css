@@ -1,7 +1,7 @@
 @import "../../styles.css";
 
 .info-section {
-    padding: 100px 80px;    
+    padding: 100px 80px 200px 80px;    
 
     display: grid;
     grid-template-rows: repeat(3, 1fr);
