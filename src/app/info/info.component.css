@@ -1,7 +1,7 @@
 @import "../../styles.css";
 
 .info-section {
-    padding: 100px 80px 200px 80px;    
+    padding: 100px 6% 200px 6%;    
 
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -14,7 +14,7 @@
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 
-    padding: 40px 40px 40px 100px;
+    padding: 2% 2% 2% 10%;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -57,3 +57,17 @@
     object-fit: cover;
 }
 
+@media only screen and (width <= 768px) {
+    .info-section .articles .text-container {
+        padding: 0;
+    }
+
+    .info-section .articles:nth-child(2) .text-container {
+        right: -8px;
+        padding: 0px 10%;
+    }
+
+    .info-section .articles:nth-child(2) .imgs {
+        max-width: 300px;
+    }
+}

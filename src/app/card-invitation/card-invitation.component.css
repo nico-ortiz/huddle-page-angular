@@ -1,8 +1,15 @@
 @import "../../styles.css";
 
+.container {
+    position: absolute;
+    left: 50%;
+    bottom: -1500px;
+}
+
 .container-invitation {
-    width: 50%;
+    width: 100%;
     padding: 50px 100px;
+    margin: 0 auto;
 
     text-align: center;
     
@@ -12,15 +19,16 @@
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 
-    position: absolute;
+    position: relative;
+    left: -50%;
     z-index: 1;
-    bottom: -1500px;
-    left: 350px;
+    /*bottom: -1500px;
+    left: 350px;*/
 }
 
 .container-invitation .title {
     color: var(--very-dark-cyan);
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .container-invitation .btn {
@@ -38,4 +46,10 @@
 
 .container-invitation .btn:hover {
     cursor: pointer;
+}
+
+@media only screen and (width = 1024px) {
+    .container {
+        bottom: -1300px;
+    }
 }

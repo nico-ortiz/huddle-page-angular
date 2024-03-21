@@ -2,11 +2,11 @@
 
 .home-container {
     background-image: url(../../assets/images/bg-hero-desktop.svg);
-    background-size: cover;
+    background-size: cover 100%;
     background-repeat: no-repeat;
     background-color: var(--very-pale-cyan);
 
-    padding: 40px 80px;
+    padding: 5% 6%;
 }
 
 .header {
@@ -37,7 +37,7 @@
     padding: 20px 0px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: center;
     column-gap: 20px;
 } 
@@ -74,4 +74,15 @@
     max-width: 100%;
     width:650px;
     object-fit: cover;
+}
+
+@media only screen and (width <= 768px) {
+    .home-container .container .text-container .title {
+        font-size: 1.5rem;
+    }
+
+    .home-container .container .text-container .paraph {
+        padding: 0;
+        font-size: .9rem;
+    }    
 }
