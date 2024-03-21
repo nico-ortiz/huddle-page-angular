@@ -1,0 +1,41 @@
+@import "../../styles.css";
+
+.container-invitation {
+    width: 50%;
+    padding: 50px 100px;
+
+    text-align: center;
+    
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+
+    position: absolute;
+    z-index: 1;
+    bottom: -1500px;
+    left: 350px;
+}
+
+.container-invitation .title {
+    color: var(--very-dark-cyan);
+    margin-bottom: 30px;
+}
+
+.container-invitation .btn {
+    padding: 20px 60px;
+    border-radius: 30px;
+    border: none;
+
+    color: white;
+    background-color: var(--pink);
+
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+.container-invitation .btn:hover {
+    cursor: pointer;
+}
