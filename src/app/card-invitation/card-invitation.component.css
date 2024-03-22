@@ -91,9 +91,3 @@
         bottom: -2200px;
     }
 }
-
-@media (width: 393px) and (height: 851px) {
-    .container {
-        bottom: -1800px;
-    }
-}
