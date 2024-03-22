@@ -53,3 +53,35 @@
         bottom: -1300px;
     }
 }
+
+@media only screen and (width <= 768px) {
+    .container {
+        bottom: -1250px;
+    }
+
+    .container .container-invitation {
+        padding: 25px 20px;
+    }
+}
+
+@media only screen and (width <= 425px) {
+    .container {
+        bottom:  -2100px;
+
+        width: 95%;
+    }
+
+    .container .container-invitation {
+        padding: 40px 20px;
+    }
+
+    .container .container-invitation .title {
+        font-size: 1.3rem;
+    }
+
+    .container .container-invitation .btn {
+        padding: 15px 50px;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+}

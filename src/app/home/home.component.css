@@ -86,3 +86,23 @@
         font-size: .9rem;
     }    
 }
+
+@media only screen and (width <= 425px) {
+    .home-container .header .logo-header {
+        max-width: 120px;
+    }
+
+    .home-container .header .primary {
+        padding: 5px 20px;
+        font-size: .6rem;
+    }
+
+    .home-container .container .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin-bottom: 50px;
+    }
+}

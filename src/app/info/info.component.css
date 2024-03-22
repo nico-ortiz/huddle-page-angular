@@ -71,3 +71,27 @@
         max-width: 300px;
     }
 }
+
+@media only screen and (width <= 425px) {
+    .info-section .articles {
+        display: flex;
+        flex-wrap:  wrap-reverse;
+        justify-content: center;
+
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    .info-section .articles:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .info-section .articles .text-container .title {
+        margin-top: 40px;
+    }
+
+    .info-section .articles .imgs,
+    .info-section .articles:nth-child(2) .imgs {
+        max-width: 250px;
+    }
+}
