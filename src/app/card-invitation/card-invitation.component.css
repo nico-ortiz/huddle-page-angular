@@ -85,3 +85,9 @@
         font-weight: bold;
     }
 }
+
+@media only screen and (width <= 320px) {
+    .container {
+        bottom: -2200px;
+    }
+}

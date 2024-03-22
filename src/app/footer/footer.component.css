@@ -122,3 +122,13 @@ section .social-media-icons > svg:hover path {
         text-align: center;
     }
 }
+
+@media only screen and (width <= 320px) {
+    section {
+        margin-top: 20px;
+    }
+
+    section .contact-container {
+        row-gap: 30px;
+    }
+}
