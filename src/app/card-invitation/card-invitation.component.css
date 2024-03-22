@@ -1,13 +1,7 @@
 @import "../../styles.css";
 
-.container {
-    position: absolute;
-    left: 50%;
-    bottom: -1500px;
-}
-
 .container-invitation {
-    width: 100%;
+    width: 50%;
     padding: 50px 100px;
     margin: 0 auto;
 
@@ -20,10 +14,9 @@
     -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 
     position: relative;
-    left: -50%;
     z-index: 1;
-    /*bottom: -1500px;
-    left: 350px;*/
+    left: 15px;
+    bottom: -100px;
 }
 
 .container-invitation .title {
@@ -48,31 +41,19 @@
     cursor: pointer;
 }
 
-@media only screen and (width = 1024px) {
-    .container {
-        bottom: -1300px;
-    }
-}
-
 @media only screen and (width <= 768px) {
-    .container {
-        bottom: -1250px;
-    }
-
     .container .container-invitation {
         padding: 25px 20px;
+        width: 60%;
     }
 }
 
 @media only screen and (width <= 425px) {
-    .container {
-        bottom:  -2100px;
-
-        width: 95%;
-    }
-
     .container .container-invitation {
         padding: 40px 20px;
+        width: 90%;
+
+        left: 0;
     }
 
     .container .container-invitation .title {
@@ -83,11 +64,5 @@
         padding: 15px 50px;
         font-size: .8rem;
         font-weight: bold;
-    }
-}
-
-@media only screen and (width <= 320px) {
-    .container {
-        bottom: -2200px;
     }
 }

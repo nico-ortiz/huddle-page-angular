@@ -1,7 +1,7 @@
 @import "../../styles.css";
 
 .info-section {
-    padding: 100px 6% 200px 6%;    
+    padding: 100px 6% 100px 6%;    
 
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -73,6 +73,10 @@
 }
 
 @media only screen and (width <= 425px) {
+    .info-section {
+        padding-bottom: 50px;
+    }
+    
     .info-section .articles {
         display: flex;
         flex-wrap:  wrap-reverse;
